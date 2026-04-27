@@ -15,10 +15,15 @@ public class CameraSwitcher : MonoBehaviour
     void Update()
     {
         // Press Y on Xbox controller
-        if (Input.GetKeyDown(KeyCode.JoystickButton3))
+        if (Input.GetKeyDown(KeyCode.JoystickButton3) || Input.GetKeyDown(KeyCode.C))
         {
             isFPP = !isFPP;
             SetCamera(isFPP);
+        }
+
+        if (Input.anyKeyDown)
+        {
+            Debug.Log("Key Pressed");
         }
     }
 
