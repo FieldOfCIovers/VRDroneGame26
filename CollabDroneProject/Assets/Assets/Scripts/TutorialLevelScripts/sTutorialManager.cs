@@ -264,7 +264,7 @@ public class sTutorialManager : MonoBehaviour
 
     private void listenForInput()
     {
-        if (Input.GetKeyUp(KeyCode.X) || Input.GetButton("Joystick Button 0"))
+        if (Input.GetKeyUp(KeyCode.X))
         {
             DialogueManager.DisplayNextSentence();
         }
@@ -278,25 +278,25 @@ public class sTutorialManager : MonoBehaviour
             }
 
 
-            if (Input.GetKeyUp(KeyCode.W) || Input.GetAxis("Vertical") > 0)
+            if (Input.GetKeyUp(KeyCode.W))
             {
                 StartCoroutine(FadeTextColor(checklistGUI[0], Color.darkGreen, colorFadeDuration));
                 keyList.Add(0);
             }
 
-            if (Input.GetKeyUp(KeyCode.S) || Input.GetAxis("Vertical") < 0)
+            if (Input.GetKeyUp(KeyCode.S))
             {
                 StartCoroutine(FadeTextColor(checklistGUI[1], Color.darkGreen, colorFadeDuration));
                 keyList.Add(1);
             }
 
-            if (Input.GetKeyUp(KeyCode.D) || Input.GetAxis("Vertical") > 0)
+            if (Input.GetKeyUp(KeyCode.D))
             {
                 StartCoroutine(FadeTextColor(checklistGUI[2], Color.darkGreen, colorFadeDuration));
                 keyList.Add(2);
             }
 
-            if (Input.GetKeyUp(KeyCode.A) || Input.GetAxis("Vertical") < 0)
+            if (Input.GetKeyUp(KeyCode.A))
             {
                 StartCoroutine(FadeTextColor(checklistGUI[3], Color.darkGreen, colorFadeDuration));
                 keyList.Add(3);
@@ -322,13 +322,13 @@ public class sTutorialManager : MonoBehaviour
                 checklistStarted = true;
             }
 
-            if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetAxis("Joystick Axis 10") < 0)
+            if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 StartCoroutine(FadeTextColor(checklistGUI[4], Color.darkGreen, colorFadeDuration));
                 keyList.Add(0);
             }
 
-            if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetAxis("Joystick Axis 9") < 0)
+            if (Input.GetKeyUp(KeyCode.LeftControl))
             {
                 StartCoroutine(FadeTextColor(checklistGUI[5], Color.darkGreen, colorFadeDuration));
                 keyList.Add(1);
@@ -353,7 +353,7 @@ public class sTutorialManager : MonoBehaviour
                 checklistStarted = true;
             }
 
-            if (Input.GetKeyUp(KeyCode.C) || Input.GetButton("Joystick Button 3"))
+            if (Input.GetKeyUp(KeyCode.C))
             {
                 StartCoroutine(FadeTextColor(checklistGUI[6], Color.darkGreen, colorFadeDuration));
                 keyList.Add(0);
