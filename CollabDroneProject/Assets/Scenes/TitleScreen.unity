@@ -537,7 +537,7 @@ RectTransform:
   m_GameObject: {fileID: 663008748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 11.07, y: 5.13, z: 1}
+  m_LocalScale: {x: 11.19, y: 6.23, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1677018181}
@@ -1042,8 +1042,7 @@ GameObject:
   - component: {fileID: 1677018180}
   - component: {fileID: 1677018179}
   - component: {fileID: 1677018178}
-  - component: {fileID: 1677018177}
-  - component: {fileID: 1677018176}
+  - component: {fileID: 1677018182}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1051,38 +1050,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1677018176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677018175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a42895dc59a38584e88d208c8ccf0353, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TitleScreen
-  playButton: {fileID: 477355718}
-  fullscreenButton: {fileID: 342073588}
-  quitButton: {fileID: 1922460502}
-  playSceneName: SampleScene
---- !u!114 &1677018177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677018175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a42895dc59a38584e88d208c8ccf0353, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TitleScreen
-  playButton: {fileID: 0}
-  fullscreenButton: {fileID: 0}
-  quitButton: {fileID: 0}
-  playSceneName: GameScene
 --- !u!114 &1677018178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1169,6 +1136,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1677018182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677018175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def58439485b6a64ea0dab677119f8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TitleScreen
+  playButton: {fileID: 477355718}
+  fullscreenButton: {fileID: 342073588}
+  quitButton: {fileID: 1922460502}
+  playSceneName: SelectScreen
 --- !u!1 &1922460501
 GameObject:
   m_ObjectHideFlags: 0
